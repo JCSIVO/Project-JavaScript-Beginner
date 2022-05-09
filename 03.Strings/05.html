@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript: Strings</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        /*
+        Es el momento de gestionar cadenas de texto
+        */ 
+       // concatenar texto
+       console.log('Hello ' + 'World') //pulsar espacio para separar
+       // template literals
+       const name = 'Jose'
+       console.log('Hello ' + name) //Simple
+       console.log(`Hello ${name}`) //template 
+       // typeof (tipo de nuestra variable)
+       console.log(typeof name) //String
+       // .length (longitud)
+       console.log(name.length) //4 -> 4 caracteres
+       // .includes() (para buscar o ver si tiene alguna informacion)
+       console.log(name.includes('e')) //True porque tiene una e
+       console.log(name.includes('fcr')) //False porque no las tiene
+       // .slice(start,end) (cortar el texto)
+       console.log(name.slice(2 , 3)) // el resultado es una s
+       // .replace('esteb texto', 'por este otro')
+       console.log(name.replace('se', 'chungo')) //jochungo
+       // .trim() -> quitar espacios en blanco delante y detras del texto
+       const text = '   a  dfre  ded  tgtg    tgtgtg       ' 
+       console.log(text.trim()) 
+       // .split(',') -> en una misma cadena de texto te llega info seprara por comas 
+       const geolocation = 'calle whatever, 7'
+       console.log(geolocation.split(',')) // te lo separa todo en un array cada 
+        </script>
+    </body>
+</html>

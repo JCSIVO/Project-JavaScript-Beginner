@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript: Logic</title>
+        <body>
+            <script type="text/javascript">
+                /*
+                Condicionales 
+                Quiero irme de viaje ¿Tengo suficiente dinero?
+                Si, me voy de viaje
+                No, tengo que seguir ahorrando 
+                */
+
+               const flight = 100;
+               const hotel = 50;
+               const tour = 30;
+               const total = flight + hotel + tour;
+               const budget = 300;
+               //const budget = 100; (respuesta negativa)
+
+               //Condicion inicial
+               const result = budget > total 
+                ?console.log('Si que me voy de viaje') //respuesta positiva
+                :console.log('No, no me voy de viaje') //respuesta negativa 
+            </script>
+        </body>
+    </head>
+</html>

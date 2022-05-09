@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript: Strings</title>
+    </head>
+    <body>
+        <p class="newsletter-text"></p>
+        <script type="text/javascript">
+        /*
+        Es el momento de gestionar cadenas de texto
+        te han pedido que incluyas en el texto de la proxima newsletter
+        unas variables dinamicas que te viene del usuario.
+        Nombre: Jose
+        Interes: Link awakening
+        Descuento: 20% en tu proxima entrada
+        Texto: Hola Usuario.
+        como regalo de bienvenida al club de gamers queremos 
+        ofrecerte un descuento del proximo lanzamiento de tu interes 
+        JUEGO ESPERAMOS QUE LA DISFRUTES.
+        Un saludo 
+        */ 
+       const NAME = 'Jose'
+       const GAME = 'Link awakening'
+       const DISCOUNT = '20'
+       const NEWSLETTER = `Hola ${NAME}.
+        como regalo de bienvenida al club de gamers queremos 
+        ofrecerte un descuento del ${DISCOUNT} del proximo lanzamiento de tu interes 
+        ${GAME} ESPERAMOS QUE LA DISFRUTES.
+        Un saludo `
+        document.querySelector('.newsletter-text').innerHTML = NEWSLETTER
+        </script>
+    </body>
+</html>

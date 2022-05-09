@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript: Booleans</title>
+    </head>
+    <body>
+        <p class="block-text"></p>
+        <script type="text/javascript">
+        /*
+        Mostrar una informacion al usuario dependiendo de si esta conectado o no
+        Mensaje si no esta conectado: Debes registrarte para leer este articulo
+        Mensaje si esta conectado: Haz click aquí para ver el contenido
+        */  
+       const USER_LOGGED = false; //cambiar a true para que el mensaje cambie 
+       const BLOCK_TEXT = document.querySelector('.block-text')
+       if( USER_LOGGED){
+           BLOCK_TEXT.innerHTML = 'Haz click aquí para ver el contenido'
+       }else {
+           BLOCK_TEXT.innerHTML = 'Debes registrarte para leer este articulo'
+       }
+        </script>
+    </body>
+</html>

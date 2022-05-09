@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript: Functions and Params</title>
+        <body>
+            <script type="text/javascript">
+                /*
+                la idea de esta seccion es que pruebes de una manera muy sencilla
+                las diferentes formas de definir funciones
+                y ejecutarlas
+                */ 
+
+                function sayHello(name = 'World') {
+                    console.log('Hello' + name)
+                }
+
+                sayHello() //resultado Hello World
+                sayHello('Jose') //resultado Hello Jose
+
+               function sum(a, b) {
+                   console.log(a + b)
+               }
+               //ejecutamos funcion
+               sum(2, 5)
+               sum(20, 50)
+               sum(12, 25)
+               sum(3, 6)
+               sum(45, 90)
+            </script>
+        </body>
+    </head>
+</html>

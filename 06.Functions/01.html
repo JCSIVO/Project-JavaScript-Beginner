@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript: Functions and Variables</title>
+        <body>
+            <script type="text/javascript">
+                /*
+                la idea de esta seccion es que pruebes de una manera muy sencilla
+                las diferentes formas de definir funciones
+                y ejecutarlas
+                */ 
+
+               //definimos funcion y variable a nivel global
+               const message = 'Hello World'
+               function sayHello() {
+                   console.log('message')
+               }
+               //ejecutamos funcion
+               sayHello()
+
+               //definimos funcion y variable a nivel local
+               function sayHello() {
+                const message1 = 'Hello World'
+                   console.log('message1')
+               }
+               console.log(message1)//muestra error porque es local y no global
+               //ejecutamos funcion
+               sayHello()
+
+               let message2
+               function sayHello() {
+                   message2 = 'Say Hello'
+                   console.log('message2')
+               }
+               //ejecutamos funcion
+               sayHello()
+            </script>
+        </body>
+    </head>
+</html>
